@@ -1,9 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Cool Alchemist — Trending Tops & Jeans</title>
+  <meta name="description" content="Affordable fashion, trending tops and jeans, and style inspiration from The Cool Alchemist." />
+  <style>
+    /* Basic reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root{
+      --accent:#ff6f61;
+      --bg:#fafafa;
+      --muted:#666;
+      --card:#ffffff;
+      --shadow: 0 6px 18px rgba(15,15,15,0.06);
+      --maxwidth:1100px;
+    }
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      color:#222;
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
 
+    /* Header & nav */
+    header {
+      background:#111;
+      color:#fff;
+    }
+    .topbar{
+      max-width:var(--maxwidth);
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:16px;
+    }
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      color:inherit;
+    }
+    .logo {
+      width:46px;
+      height:46px;
+      border-radius:8px;
+      background:linear-gradient(135deg,#222,#333);
+      display:inline-grid;
+      place-items:center;
+      font-weight:700;
+      color:var(--accent);
+      box-shadow:0 2px 6px rgba(0,0,0,0.25);
+    }
+    nav.primary {
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+    nav.primary a {
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      padding:8px 10px;
+      border-radius:8px;
+    }
+    nav.primary a:hover{ background: rgba(255,255,255,0.04); }
 
-<h1>Trending Tops and jeans</h1>
-
-<h2>Get affordable clothing at a low price</h2>
-<p> All fashion inspiration and also the latest trends can be found in The cool alchemist.Call us to get your order
-<a href="https://www.cool alchemist.com" >Visit site</a>
-
-<img src="image.jpg"alt="description"width="300">
+    /* Hero */
+    .hero{
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:56px 20px;
+      background-image: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.12)), url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1600&q=70');
+      background-size:cover;
